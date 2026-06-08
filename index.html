@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meer Mujtaba Khan — AI/ML Engineer</title>
+    <meta name="description" content="Portfolio of Meer Mujtaba Khan, AI/ML Engineer and Computer Systems Engineering student at MUET.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Ambient glows -->
+<div class="ambient ambient-1"></div>
+<div class="ambient ambient-2"></div>
+<div class="ambient ambient-3"></div>
+
+<!-- Custom cursor -->
+<div class="custom-cursor" id="cursor"></div>
+<div class="custom-cursor-ring" id="cursor-ring"></div>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+    <div class="nav-inner">
+        <a href="#" class="nav-logo">M<span>.</span>M</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+        <div class="nav-hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+    <a href="#about" class="mob-link">About</a>
+    <a href="#education" class="mob-link">Education</a>
+    <a href="#skills" class="mob-link">Skills</a>
+    <a href="#projects" class="mob-link">Projects</a>
+    <a href="#contact" class="mob-link">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-text">
+        <div class="hero-status">
+            <span class="hero-status-dot"></span>
+            Available for opportunities
+        </div>
+        <h1 class="hero-name">
+            <span class="line-1">Meer</span><br>
+            <span class="line-2">Mujtaba Khan</span>
+        </h1>
+        <div class="hero-divider"></div>
+        <div class="hero-typing"><span id="typing-text"></span><span class="cursor">|</span></div>
+        <p class="hero-bio">
+            Building intelligent systems and practical software solutions. Exploring the intersection of machine learning and real-world problem solving at MUET.
+        </p>
+        <div class="hero-btns">
+            <a href="#projects" class="btn-primary">
+                View Work
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="https://github.com/MeerMujtaba" target="_blank" class="btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                GitHub
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-image-wrap">
+        <div class="hero-img-frame">
+            <div class="hero-img-bg"></div>
+            <img src="profile.webp" alt="Meer Mujtaba Khan" class="hero-img">
+            <div class="hero-img-overlay"></div>
+            <div class="hero-img-border"></div>
+            <div class="hero-chip hero-chip-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#7a9e8e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 12 2.1 9.1"/><circle cx="12" cy="12" r="2"/><path d="M22 2 12 12"/></svg>
+                AI / ML
+            </div>
+            <div class="hero-chip hero-chip-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                Developer
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-hint">
+        <div class="scroll-hint-line"></div>
+        scroll
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-sidebar reveal">
+                <div class="section-label">About Me</div>
+                <h2 class="section-title">The person<br><em>behind the code</em></h2>
+                <div class="about-tagline">
+                    "I like building things that work — and learning why they don't."
+                </div>
+                <div class="about-stats">
+                    <div class="about-stat">
+                        <div class="about-stat-num">3<span>rd</span></div>
+                        <div class="about-stat-label">Semester</div>
+                    </div>
+                    <div class="about-stat">
+                        <div class="about-stat-num">2029</div>
+                        <div class="about-stat-label">Graduation</div>
+                    </div>
+                    <div class="about-stat">
+                        <div class="about-stat-num">5<span>+</span></div>
+                        <div class="about-stat-label">Languages</div>
+                    </div>
+                    <div class="about-stat">
+                        <div class="about-stat-num">1</div>
+                        <div class="about-stat-label">Major Project</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content reveal">
+                <p>I'm a Computer Systems Engineering student at Mehran University (MUET), currently in my third semester and figuring out how computers actually work — which mostly means asking "why isn't this compiling?" at 2 AM.</p>
+                <p>My interest in AI and machine learning started the way most good things do: by accident. I was trying to automate something tedious, stumbled into Python, and before I knew it I was reading papers about neural networks.</p>
+                <p>These days, I split my time between coursework, building desktop applications with Java Swing, and working through the Google AI Essentials curriculum. I enjoy programming that solves real problems for real people — like the electricity billing system I built after hearing one too many complaints about inaccurate utility bills in my area.</p>
+                <p>If you're working on something interesting in the AI/ML space — especially if it's practical and a little bit weird — I'd love to hear about it.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <div class="container">
+        <div class="section-label reveal">Education</div>
+        <h2 class="section-title reveal">Where I<br>learned things</h2>
+
+        <div class="edu-items">
+            <div class="edu-item reveal">
+                <div class="edu-year">2024 — Now</div>
+                <div class="edu-spine">
+                    <div class="edu-dot"></div>
+                    <div class="edu-line"></div>
+                </div>
+                <div class="edu-body">
+                    <div class="edu-degree">B.E. Computer Systems Engineering</div>
+                    <div class="edu-school">Mehran University of Engineering & Technology</div>
+                    <div class="edu-sub">Jamshoro, Pakistan</div>
+                    <div class="edu-tags">
+                        <span class="tag">3rd Semester</span>
+                        <span class="tag">Expected 2029</span>
+                    </div>
+                </div>
+            </div>
+            <div class="edu-item reveal">
+                <div class="edu-year">Completed</div>
+                <div class="edu-spine">
+                    <div class="edu-dot" style="background: var(--gold);"></div>
+                    <div class="edu-line"></div>
+                </div>
+                <div class="edu-body">
+                    <div class="edu-degree">Intermediate in Computer Science</div>
+                    <div class="edu-school">Army Public School & College Petaro</div>
+                    <div class="edu-sub">ICS</div>
+                    <div class="edu-tags">
+                        <span class="tag tag-gold">ICS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <div class="container">
+        <div class="section-label reveal">Skills</div>
+        <h2 class="section-title reveal">What I<br>can do</h2>
+
+        <div class="skills-grid reveal">
+            <!-- Languages -->
+            <div class="skill-card">
+                <div class="skill-card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <div class="skill-card-title">Programming Languages</div>
+                <div class="skill-bar-wrap">
+                    <div class="skill-bar-header"><span>Python</span><span>85%</span></div>
+                    <div class="skill-track"><div class="skill-fill" data-w="85%"></div></div>
+                </div>
+                <div class="skill-bar-wrap">
+                    <div class="skill-bar-header"><span>Java</span><span>80%</span></div>
+                    <div class="skill-track"><div class="skill-fill" data-w="80%"></div></div>
+                </div>
+                <div class="skill-bar-wrap">
+                    <div class="skill-bar-header"><span>C / C++</span><span>75%</span></div>
+                    <div class="skill-track"><div class="skill-fill" data-w="75%"></div></div>
+                </div>
+                <div class="skill-bar-wrap">
+                    <div class="skill-bar-header"><span>HTML</span><span>70%</span></div>
+                    <div class="skill-track"><div class="skill-fill" data-w="70%"></div></div>
+                </div>
+            </div>
+
+            <!-- Development -->
+            <div class="skill-card">
+                <div class="skill-card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                </div>
+                <div class="skill-card-title">Development</div>
+                <div class="skill-pills">
+                    <span class="skill-pill">Object-Oriented Programming</span>
+                    <span class="skill-pill">Java Swing</span>
+                    <span class="skill-pill">Desktop Applications</span>
+                    <span class="skill-pill">DBMS / Microsoft Access</span>
+                    <span class="skill-pill">Data Structures</span>
+                    <span class="skill-pill">Algorithms</span>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skill-card">
+                <div class="skill-card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                </div>
+                <div class="skill-card-title">Tools & Soft Skills</div>
+                <div class="skill-pills">
+                    <span class="skill-pill">Critical Thinking</span>
+                    <span class="skill-pill">Problem Solving</span>
+                    <span class="skill-pill">Decision Making</span>
+                    <span class="skill-pill">Analytical Thinking</span>
+                    <span class="skill-pill">Organisation & Planning</span>
+                    <span class="skill-pill">Microsoft Office</span>
+                    <span class="skill-pill">Google Drive</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spoken languages -->
+        <div class="lang-bar reveal" style="margin-top: 2px;">
+            <div class="lang-item">
+                <div class="lang-name">English</div>
+                <div class="lang-level">Professional</div>
+            </div>
+            <div class="lang-item">
+                <div class="lang-name">Urdu</div>
+                <div class="lang-level">Native</div>
+            </div>
+            <div class="lang-item">
+                <div class="lang-name">Sindhi</div>
+                <div class="lang-level">Native</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+    <div class="container">
+        <div class="section-label reveal">Certifications</div>
+        <h2 class="section-title reveal">Proof I learned<br>something</h2>
+
+        <div class="cert-card reveal">
+            <div class="cert-header">
+                <div class="cert-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0d1520" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                </div>
+                <div class="cert-info">
+                    <h3>Google AI Essentials</h3>
+                    <p>Coursera Specialization &nbsp;·&nbsp; November 2025</p>
+                </div>
+                <a href="https://coursera.org/verify/specialization/OGTFUTLJDSYV" target="_blank" class="cert-verify">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                    Verify Certificate
+                </a>
+            </div>
+            <div class="cert-modules">
+                <div class="cert-module">
+                    <div class="cert-module-dot"></div>
+                    <div>
+                        <h4>Introduction to AI</h4>
+                        <p>Fundamentals of artificial intelligence and its applications</p>
+                    </div>
+                </div>
+                <div class="cert-module">
+                    <div class="cert-module-dot"></div>
+                    <div>
+                        <h4>Maximize Productivity with AI Tools</h4>
+                        <p>Leveraging AI for workflow optimisation</p>
+                    </div>
+                </div>
+                <div class="cert-module">
+                    <div class="cert-module-dot"></div>
+                    <div>
+                        <h4>Discover the Art of Prompting</h4>
+                        <p>Crafting effective prompts for better AI outputs</p>
+                    </div>
+                </div>
+                <div class="cert-module">
+                    <div class="cert-module-dot"></div>
+                    <div>
+                        <h4>Use AI Responsibly</h4>
+                        <p>Ethical considerations and responsible AI usage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cert-card reveal" style="margin-top: 1.5rem;">
+            <div class="cert-header">
+                <div class="cert-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0d1520" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                </div>
+                <div class="cert-info">
+                    <h3>AI Agents for Beginners</h3>
+                    <p>Microsoft &nbsp;·&nbsp; June 2026 &nbsp;·&nbsp; Code: 10323704</p>
+                </div>
+            </div>
+            <div class="cert-modules">
+                <div class="cert-module">
+                    <div class="cert-module-dot"></div>
+                    <div>
+                        <h4>AI Agents Fundamentals</h4>
+                        <p>Introduction to autonomous AI agents, their architecture and real-world applications</p>
+                    </div>
+                </div>
+                <div class="cert-module">
+                    <div class="cert-module-dot"></div>
+                    <div>
+                        <h4>Building & Orchestrating Agents</h4>
+                        <p>Hands-on experience designing multi-step agentic workflows and tool-use patterns</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="container">
+        <div class="section-label reveal">Projects</div>
+        <h2 class="section-title reveal">Things I've<br>built</h2>
+
+        <div class="project-featured reveal">
+            <div class="project-info">
+                <div class="project-label">Featured Project &nbsp;·&nbsp; Desktop Application</div>
+                <h3 class="project-title">HESCO Electricity Bill &amp; Power Management</h3>
+                <p class="project-desc">Built after hearing one too many complaints about inaccurate utility bills. A full-featured desktop app that handles billing, tracks power usage, and flags potential theft by comparing transformer output against billed units.</p>
+                <p class="project-desc">The theft detection logic — modelling what "normal" power loss looks like versus suspicious discrepancies — was the most interesting challenge. Not deep learning yet, but rich in data validation and user role management.</p>
+                <div class="project-features">
+                    <span class="project-feature">Dual Portals (Admin + Resident)</span>
+                    <span class="project-feature">Automated Billing Engine</span>
+                    <span class="project-feature">Theft Detection Logic</span>
+                    <span class="project-feature">Area-wise Reports</span>
+                    <span class="project-feature">Usage Monitoring</span>
+                    <span class="project-feature">Complaint System</span>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Java Swing</span>
+                    <span class="tech-tag">OOP</span>
+                    <span class="tech-tag">MS Access</span>
+                </div>
+                <a href="https://github.com/MeerMujtaba" target="_blank" class="project-link">
+                    View on GitHub
+                    <svg class="project-link-arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+            <div class="project-visual">
+                <div class="project-visual-grid"></div>
+                <div class="project-mock">
+                    <div class="mock-window">
+                        <div class="mock-titlebar">
+                            <span class="mock-dot mock-dot-r"></span>
+                            <span class="mock-dot mock-dot-y"></span>
+                            <span class="mock-dot mock-dot-g"></span>
+                            <span class="mock-title">Admin Dashboard</span>
+                        </div>
+                        <div class="mock-body">
+                            <div class="mock-row mock-row-long"></div>
+                            <div class="mock-row mock-row-med"></div>
+                            <div class="mock-row mock-row-short"></div>
+                            <div class="mock-stats">
+                                <div class="mock-stat-box"></div>
+                                <div class="mock-stat-box" style="background: rgba(201,168,76,0.1)"></div>
+                                <div class="mock-stat-box"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mock-window">
+                        <div class="mock-titlebar">
+                            <span class="mock-dot mock-dot-r"></span>
+                            <span class="mock-dot mock-dot-y"></span>
+                            <span class="mock-dot mock-dot-g"></span>
+                            <span class="mock-title">Billing Module</span>
+                        </div>
+                        <div class="mock-body">
+                            <div style="display:flex;justify-content:space-between;margin-bottom:8px">
+                                <span style="font-size:.72rem;color:var(--text-dim)">Units Consumed</span>
+                                <span style="font-size:.72rem;color:var(--sage)">450 kWh</span>
+                            </div>
+                            <div style="display:flex;justify-content:space-between;margin-bottom:8px">
+                                <span style="font-size:.72rem;color:var(--text-dim)">Rate</span>
+                                <span style="font-size:.72rem;color:var(--text-muted)">Rs. 12.5</span>
+                            </div>
+                            <div style="height:1px;background:var(--border);margin:10px 0"></div>
+                            <div style="display:flex;justify-content:space-between">
+                                <span style="font-size:.75rem;color:var(--ivory)">Total Bill</span>
+                                <span style="font-size:.75rem;color:var(--gold)">Rs. 5,625</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+        <div class="section-label reveal">Contact</div>
+        <h2 class="section-title reveal">Let's build<br>something</h2>
+
+        <div class="contact-grid">
+            <div class="reveal">
+                <p class="contact-intro">"Have an interesting project, a terrible bug you need help with, or just want to talk about AI? I'm around."</p>
+                <div class="contact-detail">
+                    <div class="contact-detail-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-detail-label">Email</div>
+                        <div class="contact-detail-val"><a href="mailto:meermujtaba@gmail.com">meermujtaba@gmail.com</a></div>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-detail-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 10.5 19.79 19.79 0 0 1 1.63 2.18 2 2 0 0 1 3.6.06h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 7.91a16 16 0 0 0 6 6l.93-.93a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 15z"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-detail-label">Phone</div>
+                        <div class="contact-detail-val"><a href="tel:+923253670200">+92 325 3670200</a></div>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-detail-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-detail-label">Location</div>
+                        <div class="contact-detail-val">Jamshoro, Pakistan</div>
+                    </div>
+                </div>
+                <div class="contact-socials">
+                    <a href="https://github.com/MeerMujtaba" target="_blank" class="contact-social" title="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/meer-mujtaba" target="_blank" class="contact-social" title="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="mailto:meermujtaba@gmail.com" class="contact-social" title="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-input" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-input" placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-input" placeholder="What's on your mind?"></textarea>
+                    </div>
+                    <button type="submit" class="form-btn" id="send-btn">
+                        <span id="btn-text">Send Message</span>
+                        <svg id="btn-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-name">Meer <span>Mujtaba Khan</span></div>
+    <div class="footer-copy">© 2025 · Built with curiosity and caffeine</div>
+</footer>
+    <script src="main.js"></script>
+</body>
+</html>

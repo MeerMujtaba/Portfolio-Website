@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Meer Mujtaba Khan, Computer Systems Engineering student at MUET, focused on AI, machine learning, Java desktop apps, automation, and practical software solutions.">
+    <meta name="keywords" content="Meer Mujtaba Khan, Computer System Engineer, Portfolio, AI, Machine Learning, Java Developer, MUET">
+    <meta name="author" content="Meer Mujtaba Khan">
+    <title>Meer Mujtaba Khan — Computer System Engineer</title>
+    <!-- ===== ADVANCED SEO & SOCIAL PREVIEW ===== -->
+    <link rel="canonical" href="https://meermujtaba.github.io/Portfolio-Website/">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#05070d">
+
+    <!-- Open Graph / LinkedIn / Facebook / WhatsApp -->
+    <meta property="og:site_name" content="Meer Mujtaba Khan Portfolio">
+    <meta property="og:title" content="Meer Mujtaba Khan — Computer System Engineer">
+    <meta property="og:description" content="Portfolio of Meer Mujtaba Khan, Computer Systems Engineering student at MUET, focused on AI, machine learning, Java desktop apps, automation, and practical software solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://meermujtaba.github.io/Portfolio-Website/">
+    <meta property="og:image" content="https://meermujtaba.github.io/Portfolio-Website/assets/og-image.jpg">
+    <meta property="og:image:secure_url" content="https://meermujtaba.github.io/Portfolio-Website/assets/og-image.jpg">
+    <meta property="og:image:alt" content="Meer Mujtaba Khan portfolio preview">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Meer Mujtaba Khan — Computer System Engineer">
+    <meta name="twitter:description" content="Portfolio of Meer Mujtaba Khan, Computer Systems Engineering student at MUET, focused on AI, machine learning, Java desktop apps, automation, and practical software solutions.">
+    <meta name="twitter:image" content="https://meermujtaba.github.io/Portfolio-Website/assets/og-image.jpg">
+    <meta name="twitter:image:alt" content="Meer Mujtaba Khan portfolio preview">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Meer Mujtaba Khan",
+        "jobTitle": "Computer Systems Engineering Student",
+        "description": "Portfolio of Meer Mujtaba Khan, Computer Systems Engineering student at MUET, focused on AI, machine learning, Java desktop apps, automation, and practical software solutions.",
+        "url": "https://meermujtaba.github.io/Portfolio-Website/",
+        "image": "https://meermujtaba.github.io/Portfolio-Website/assets/profile.jpg",
+        "affiliation": {
+                "@type": "CollegeOrUniversity",
+                "name": "Mehran University of Engineering & Technology, Jamshoro"
+        },
+        "knowsAbout": [
+                "Artificial Intelligence",
+                "Machine Learning",
+                "Java",
+                "Java Swing",
+                "Python",
+                "C++",
+                "Database Management Systems",
+                "Automation",
+                "Prompt Engineering"
+        ],
+        "sameAs": [
+                "https://github.com/MeerMujtaba",
+                "https://www.linkedin.com/in/meer-mujtaba"
+        ]
+}
+    </script>
+    <!-- ===== END ADVANCED SEO & SOCIAL PREVIEW ===== -->
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== LOADING SCREEN ===== -->
+    <div id="loading">
+        <div class="loading-text" id="name-loader">
+            <span data-text="M">M</span>
+            <span data-text="E">E</span>
+            <span data-text="E">E</span>
+            <span data-text="R">R</span>
+        </div>
+    </div>
+
+    <!-- ===== SCROLL PROGRESS BAR ===== -->
+    <div id="scroll-bar">
+        <div id="scroll-indicator"></div>
+    </div>
+
+    <!-- ===== FIXED EMAIL SIDEBAR ===== -->
+    <a href="mailto:meermujtaba@gmail.com" class="fixed-email">meermujtaba@gmail.com</a>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">MMK</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#ieee">IEEE</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero-section">
+        <!-- WebGL Line Waves Background -->
+        <div id="line-waves-container" class="hero-bg"></div>
+
+        <div class="hero-content">
+            <p class="hero-greeting">Welcome to my portfolio</p>
+            <h1 class="hero-name">Hi, I'm <span class="name-highlight" data-name="Meer Mujtaba Khan">Meer Mujtaba Khan</span></h1>
+            <h2 class="hero-title">
+                <span class="typing-text"></span><span class="cursor">|</span>
+            </h2>
+            <p class="hero-description hero-intro-line">
+                Computer Systems Engineering student building intelligent systems, Java apps, and practical AI solutions.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <p class="section-subtitle">Get to know the person behind the code</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content reveal">
+                <div class="about-image-wrapper">
+                    <img src="assets/profile.jpg" alt="Meer Mujtaba Khan" class="about-profile-img">
+                </div>
+                <div class="about-text-container">
+                    <div class="about-text">
+                        <p>
+                            Meer Mujtaba Khan is a Computer Systems Engineering student at Mehran University of Engineering &amp; Technology, Jamshoro. His current focus is artificial intelligence, machine learning, automation, Java desktop application development, and database-driven systems. He enjoys building practical software that connects programming with real-life problems and makes daily tasks faster, clearer, and smarter.
+                        </p>
+                    </div>
+                    <blockquote class="about-quote">
+                        <svg class="quote-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.4"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+                        <p>"I like building things that work — and learning why they don't."</p>
+                    </blockquote>
+                    <div class="about-stats">
+                        <div class="about-stat-card">
+                            <span class="about-stat-number gradient-text">5+</span>
+                            <span class="about-stat-label">Projects Built</span>
+                        </div>
+                        <div class="about-stat-card">
+                            <span class="about-stat-number gradient-text">6+</span>
+                            <span class="about-stat-label">Certifications</span>
+                        </div>
+                        <div class="about-stat-card">
+                        <span class="about-stat-number gradient-text">6</span>
+                        <span class="about-stat-label">IEEE Societies</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== JOURNEY SECTION ===== -->
+    <section id="journey" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+                <p class="section-subtitle">The milestones that shaped my path</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-badge">Education</div>
+                        <h3>Computer Systems Engineering — MUET Jamshoro</h3>
+                        <p>Currently studying Computer Systems Engineering at Mehran University of Engineering &amp; Technology, Jamshoro.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-badge">Education</div>
+                        <h3>APSACS Academic Background</h3>
+                        <p>Completed earlier education from Army Public Schools &amp; Colleges System with a strong academic foundation in computer science.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-badge">Leadership</div>
+                        <h3>Technical Coordinator — IEEE IMS MUET SBC</h3>
+                        <p>Joined IEEE Instrumentation &amp; Measurement Society MUET Student Branch Chapter as Technical Coordinator, contributing to technical coordination, student engagement, and engineering community activities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3 class="skill-category-title">Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                        </div>
+                        <h3 class="skill-category-title">Database &amp; Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MS Access</span>
+                        <span class="skill-tag">DBMS</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Responsive Web Design</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4c0 2 2 3 2 6H14c0-3 2-4 2-6a4 4 0 0 0-4-4z"/><path d="M10 18h4"/><path d="M10 22h4"/><path d="M10 14v2"/><path d="M14 14v2"/></svg>
+                        </div>
+                        <h3 class="skill-category-title">Technical Focus</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Artificial Intelligence</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Automation</span>
+                        <span class="skill-tag">Java Swing Applications</span>
+                        <span class="skill-tag">Desktop Software Development</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">AI Productivity Tools</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">Real-world solutions and hands-on builds</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                        <h3>HESCO Electricity Bill &amp; Power Management</h3>
+                        <p>A Java Swing desktop application with admin and resident portals, automated electricity billing, complaint handling, usage monitoring, and theft detection logic.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Java Swing</span>
+                            <span>OOP</span>
+                            <span>MS Access</span>
+                            <span>DBMS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <h3>Interactive Portfolio Website</h3>
+                        <p>A responsive personal portfolio website with dark UI, animations, typing effect, modal cards, smooth transitions, and mobile-friendly design.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://meermujtaba.github.io/Portfolio-Website/" target="_blank" rel="noopener noreferrer" class="project-link live">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/MeerMujtaba/Portfolio-Website" target="_blank" rel="noopener noreferrer" class="project-link github">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3>3D Luxury Chess Product Showcase</h3>
+                        <p>A premium product showcase website built around a clean modern UI, smooth animations, responsive design, and an interactive 3D chess product experience.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/MeerMujtaba/3D-luxury-chess-product-showcase" target="_blank" rel="noopener noreferrer" class="project-link github">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        </div>
+                        <h3>AI / ML Practice</h3>
+                        <p>Hands-on learning and practice in artificial intelligence, machine learning concepts, prompting, productivity with AI tools, and responsible use of intelligent systems.</p>
+                        <div class="project-tech">
+                            <span>AI</span>
+                            <span>Prompting</span>
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Responsible AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS SECTION ===== -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">My <span class="gradient-text">Certifications</span></h2>
+                <p class="section-subtitle">Professional credentials and continuous learning</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card reveal">
+                    <div class="cert-card-header">
+                        <div>
+                            <h3 class="cert-name">Google AI Essentials</h3>
+                            <span class="cert-issuer">Coursera / Google</span>
+                        </div>
+                        <div class="cert-badge">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                    </div>
+                    <p class="cert-detail">Completed five-course specialization covering AI fundamentals, productivity with AI tools, prompting, responsible AI use, and staying ahead of AI trends.</p>
+                    <div class="cert-meta">
+                        <span>📅 November 21, 2025</span>
+                    </div>
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/OGTFUTLJDSYV" target="_blank" rel="noopener noreferrer" class="cert-verify">↗ Verify Certificate</a>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-card-header">
+                        <div>
+                            <h3 class="cert-name">AI Agents for Beginners</h3>
+                            <span class="cert-issuer">Microsoft</span>
+                        </div>
+                        <div class="cert-badge">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                    </div>
+                    <p class="cert-detail">Covers AI agent fundamentals, workflow orchestration, tool-use patterns, and agentic systems.</p>
+                    <div class="cert-meta">
+                        <span>📅 June 8, 2026</span>
+                        <span>🔑 Code: 10323704</span>
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-card-header">
+                        <div>
+                            <h3 class="cert-name">Getting Started with Machine Learning Algorithms</h3>
+                            <span class="cert-issuer">Online Course</span>
+                        </div>
+                        <div class="cert-badge">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                    </div>
+                    <p class="cert-detail">Introduces core machine learning algorithm concepts and practical ML learning foundations.</p>
+                    <div class="cert-meta">
+                        <span>📅 June 21, 2026</span>
+                        <span>🔑 Code: 10376609</span>
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-card-header">
+                        <div>
+                            <h3 class="cert-name">Google Ads Display Certification</h3>
+                            <span class="cert-issuer">Google Ads Professional</span>
+                        </div>
+                        <div class="cert-badge">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                    </div>
+                    <p class="cert-detail">Certified in Google Ads Display campaign concepts, display advertising, and campaign fundamentals.</p>
+                    <div class="cert-meta">
+                        <span>📅 June 9, 2026 — June 9, 2027</span>
+                        <span>🔑 ID: 184865554</span>
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-card-header">
+                        <div>
+                            <h3 class="cert-name">Introduction to Deep Learning with Keras</h3>
+                            <span class="cert-issuer">Simplilearn SkillUp</span>
+                        </div>
+                        <div class="cert-badge">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                    </div>
+                    <p class="cert-detail">Covers deep learning fundamentals using Keras and neural network concepts.</p>
+                    <div class="cert-meta">
+                        <span>📅 June 9, 2026</span>
+                        <span>🔑 Code: 10328967</span>
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-card-header">
+                        <div>
+                            <h3 class="cert-name">Getting Started with Generative AI</h3>
+                            <span class="cert-issuer">IBM SkillsBuild</span>
+                        </div>
+                        <div class="cert-badge">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                    </div>
+                    <p class="cert-detail">Introduces generative AI concepts, use cases, and foundational AI productivity knowledge.</p>
+                    <div class="cert-meta">
+                        <span>📅 June 30, 2026</span>
+                    </div>
+                    <a href="https://www.credly.com/go/YDExVRzL" target="_blank" rel="noopener noreferrer" class="cert-verify">↗ Verify Badge</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== IEEE SECTION ===== -->
+    <section id="ieee" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title"><span class="gradient-text">IEEE</span> Memberships</h2>
+                <p class="section-subtitle">Professional society involvement and technical community</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="ieee-main reveal">
+                <span class="ieee-role-badge">Technical Coordinator</span>
+                <h3>IEEE IMS MUET Student Branch Chapter</h3>
+                <p>Joined IEEE Instrumentation &amp; Measurement Society MUET Student Branch Chapter as Technical Coordinator, contributing to technical coordination, student engagement, and engineering community activities.</p>
+            </div>
+            <div class="ieee-grid">
+                <div class="ieee-card reveal">
+                    <div class="ieee-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h4>IEEE Student Membership 2026</h4>
+                    <p>Recognized as an IEEE Student Member in good standing through December 2026, reflecting commitment to technology and professional growth.</p>
+                </div>
+                <div class="ieee-card reveal">
+                    <div class="ieee-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <h4>IEEE Instrumentation &amp; Measurement Society</h4>
+                    <p>Student member of IEEE IMS, focused on instrumentation, measurement systems, sensors, and engineering standards.</p>
+                </div>
+                <div class="ieee-card reveal">
+                    <div class="ieee-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                    <h4>IEEE Communications Society</h4>
+                    <p>Student member of IEEE ComSoc, connected with communication systems, networking, and modern telecom technologies.</p>
+                </div>
+                <div class="ieee-card reveal">
+                    <div class="ieee-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h4>IEEE Microwave Theory and Technology Society</h4>
+                    <p>Student member of IEEE MTT-S, focused on RF, microwave, millimeter-wave, and high-frequency technologies.</p>
+                </div>
+                <div class="ieee-card reveal">
+                    <div class="ieee-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    </div>
+                    <h4>IEEE Industrial Electronics Society</h4>
+                    <p>Student member of IEEE IES, connected with industrial electronics, automation, control systems, and smart technologies.</p>
+                </div>
+                <div class="ieee-card reveal">
+                    <div class="ieee-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    <h4>IEEE Industry Applications Society</h4>
+                    <p>Student member of IEEE IAS, focused on practical industry applications of electrical and electronic engineering.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS SECTION ===== -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Key <span class="gradient-text">Achievements</span></h2>
+                <p class="section-subtitle">Milestones and recognitions along the way</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">🏅</div>
+                    <div>
+                        <h4>APSACS MUN Peace Fest 2024</h4>
+                        <p>Participation certificate from Army Public Schools &amp; Colleges System.</p>
+                    </div>
+                </div>
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">✅</div>
+                    <div>
+                        <h4>Google Ads Display Certification</h4>
+                        <p>Certified by Google Ads, valid from June 2026 to June 2027.</p>
+                    </div>
+                </div>
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">⭐</div>
+                    <div>
+                        <h4>IBM SkillsBuild Generative AI Badge</h4>
+                        <p>Completed Getting Started with Generative AI.</p>
+                    </div>
+                </div>
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">📚</div>
+                    <div>
+                        <h4>Google AI Essentials</h4>
+                        <p>Completed five-course Google AI specialization through Coursera.</p>
+                    </div>
+                </div>
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">🤝</div>
+                    <div>
+                        <h4>Multiple IEEE Society Memberships</h4>
+                        <p>Joined IEEE professional societies to build technical exposure and engineering network.</p>
+                    </div>
+                </div>
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">🔧</div>
+                    <div>
+                        <h4>Technical Coordinator — IEEE IMS MUET SBC</h4>
+                        <p>Leading technical coordination and student engagement in IEEE activities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GITHUB SECTION ===== -->
+    <section id="github" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title"><span class="gradient-text">GitHub</span> Activity</h2>
+                <p class="section-subtitle">Open source contributions and development activity</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="github-content reveal">
+                <div class="github-stats">
+                    <div class="github-stat-card">
+                        <div class="stat-value" data-count="5" data-suffix="+">0</div>
+                        <div class="stat-label">Public Repos</div>
+                    </div>
+                    <div class="github-stat-card">
+                        <div class="stat-value" data-count="50" data-suffix="+">0</div>
+                        <div class="stat-label">Contributions</div>
+                    </div>
+                    <div class="github-stat-card">
+                        <div class="stat-value" data-count="6">0</div>
+                        <div class="stat-label">Certificates</div>
+                    </div>
+                </div>
+                <div class="github-contributions">
+                    <h3 class="github-contributions-title">Contribution Activity</h3>
+                    <div class="contribution-legend">
+                        <span>Less</span>
+                        <div class="legend-cells">
+                            <div class="contribution-cell level-0"></div>
+                            <div class="contribution-cell level-1"></div>
+                            <div class="contribution-cell level-2"></div>
+                            <div class="contribution-cell level-3"></div>
+                            <div class="contribution-cell level-4"></div>
+                        </div>
+                        <span>More</span>
+                    </div>
+                    <div class="contribution-grid" id="contributionGrid"></div>
+                </div>
+                <div class="github-languages">
+                    <div class="lang-badge"><span class="lang-dot" style="background:#b07219;"></span>Java</div>
+                    <div class="lang-badge"><span class="lang-dot" style="background:#3572A5;"></span>Python</div>
+                    <div class="lang-badge"><span class="lang-dot" style="background:#e34c26;"></span>HTML</div>
+                    <div class="lang-badge"><span class="lang-dot" style="background:#563d7c;"></span>CSS</div>
+                    <div class="lang-badge"><span class="lang-dot" style="background:#f1e05a;"></span>JavaScript</div>
+                    <div class="lang-badge"><span class="lang-dot" style="background:#555555;"></span>C/C++</div>
+                </div>
+                <a href="https://github.com/MeerMujtaba" target="_blank" rel="noopener noreferrer" class="github-profile-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    View GitHub Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="section-subtitle">Let's connect and build something great together</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:meermujtaba@gmail.com" class="contact-card reveal">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>meermujtaba@gmail.com</p>
+                    </div>
+                </a>
+                <a href="tel:+923253670200" class="contact-card reveal">
+                    <div class="contact-icon">📱</div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+92 325 3670200</p>
+                    </div>
+                </a>
+                <div class="contact-card reveal">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Jamshoro, Pakistan</p>
+                    </div>
+                </div>
+                <a href="https://meermujtaba.github.io/Portfolio-Website/" target="_blank" rel="noopener noreferrer" class="contact-card reveal">
+                    <div class="contact-icon">🌐</div>
+                    <div>
+                        <h4>Portfolio</h4>
+                        <p>meermujtaba.github.io</p>
+                    </div>
+                </a>
+                <a href="https://github.com/MeerMujtaba" target="_blank" rel="noopener noreferrer" class="contact-card reveal">
+                    <div class="contact-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </div>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p>github.com/MeerMujtaba</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/meer-mujtaba" target="_blank" rel="noopener noreferrer" class="contact-card reveal">
+                    <div class="contact-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </div>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/meer-mujtaba</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Meer Mujtaba Khan. Built with passion for intelligent systems and practical software.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

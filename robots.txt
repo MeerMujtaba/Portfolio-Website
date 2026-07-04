@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meermujtaba.github.io/Portfolio-Website/sitemap.xml
